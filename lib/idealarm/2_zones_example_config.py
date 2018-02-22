@@ -28,7 +28,8 @@ ALARM_ZONES = [
         'sensors': [
             {'name': 'Door_1_Lock', 'sensorClass': 'A', 'nag': True, 'nagTimeoutMins': 4, 'armWarn': True, 'enabled': True},
             {'name': 'Door_3_Lock', 'sensorClass': 'A', 'nag': True, 'nagTimeoutMins': 4, 'armWarn': True, 'enabled': True},
-            {'name': 'MD_Bathroom_1', 'sensorClass': 'B', 'nag': False, 'nagTimeoutMins': 4, 'armWarn': False, 'enabled': True}
+            {'name': 'MD_Bathroom_1', 'sensorClass': 'B', 'nag': False, 'nagTimeoutMins': 4, 'armWarn': False, 'enabled': True},
+            {'name': 'Door_5_Lock', 'sensorClass': 'A', 'nag': True, 'nagTimeoutMins': 10, 'armWarn': True, 'enabled': d5Enabled}
         ],
         'armAwayToggleSwitch': 'Toggle_Z1_Armed_Away',
         'armHomeToggleSwitch': 'Toggle_Z1_Armed_Home',
