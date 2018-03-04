@@ -39,9 +39,9 @@ For your convenience you can easily enable or disable a section in the configura
 ## Installation
 
 #### Prerequisits
-* openHAB version **2.2** or later
+* [openHAB](https://docs.openhab.org/index.html) version **2.2** or later
 * [Jython scripting for openHAB 2.x](https://github.com/steve-bate/openhab2-jython)
-* openHAB expire binding
+* openHAB [expire binding](https://docs.openhab.org/addons/bindings/expire1/readme.html)
 * openHAB [persistence](https://docs.openhab.org/configuration/persistence.html) setup and working
 * utils from mylib
 
