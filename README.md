@@ -41,8 +41,10 @@ For your convenience you can easily enable or disable a section in the configura
 * openHAB expire binding
 * utils from mylib
 
-#### Create mappings
-Create the mappings files for your language. 
+#### Download mapping files
+Download the [arming mode mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_armingmode.map) and save it on your system where you keep your mappings files.
+
+Download the [zone status mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_zonestatus.map) and save it on your system where you keep your mappings files.
 
 #### Create Items for each alarm zone you intend to use
 For each alarm zone that you wish to define, create the following items. You are advised to keep the naming convention suggested at least until everything is set up and works well. Your first zone's items get item names starting with 'Z1'.
