@@ -27,11 +27,11 @@ Each Alarm Zone has an Item that holds one of the following states: 'Normal', 'A
 #### Alarm Zone Arming Mode 
 Each Alarm Zone has an Item that holds one of the following arming modes: 'Disarmed', 'Armed Home', or 'Armed Away'
 
-#### Assign sensors for an alarm zone
-You define the sensors for an alarm zone in the config file.
+#### Sections (sensors)
+We prefer to use the name 'section' for a sensor. A section could for example be a group of windows, each with a physical contact connected in serial with a z-wave sensor. A section can also be a single physical sensor.
 
-#### Sensor enabled
-For your convenience you can easily enable or disable a sensor in the configuration file. If you wish you can also declare a function for a specific alarm sensor in the configuration file that allows the sensor to be automatically enabled for example only when it's dark or depending on the state of other openHAB Items. If you have implemented presence detection in your system, you could for example disable a specific alarm sensor when you are at home.
+#### A section can be enabled or disabled
+For your convenience you can easily enable or disable a section in the configuration file. If you wish you can also declare a function for a specific section in the configuration file that allows the senction to be automatically enabled for example only when it's dark or depending on the state of other openHAB Items. If you have implemented presence detection in your system, you could for example disable a specific section when you are at home.
 
 ## Installation
 
