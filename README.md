@@ -39,12 +39,24 @@ For your convenience you can easily enable or disable a section in the configura
 * openHAB version **2.2** or later
 * [Jython scripting for openHAB 2.x](https://github.com/steve-bate/openhab2-jython)
 * openHAB expire binding
+* openHAB persistence setup and working
 * utils from mylib
+
 
 #### Download mapping files
 Download the [arming mode mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_armingmode.map) and save it on your system where you keep your mappings files.
 
 Download the [zone status mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_zonestatus.map) and save it on your system where you keep your mappings files.
+
+#### Define Item Groups (needed for persistence)
+Below is an example how you can define some groups to help organize your ideAlarm Items. The important thing here is not the names of the groups but rather that you have defined your persistence so that the group **G_Persist** will be persisted on change and on system start up.
+```
+Group G_Persist // Persist on change and system start up
+Group G_AlarmArmingMode (G_Persist)
+Group G_AlarmStatus (G_Persist)
+Group G_VirtualDevice (G_Persist)
+Group G_Timer
+```
 
 #### Create Items for each alarm zone you intend to use
 For each alarm zone that you wish to define, create the following items. You are advised to keep the naming convention suggested at least until everything is set up and works well. Your first zone's items get item names starting with 'Z1'.
