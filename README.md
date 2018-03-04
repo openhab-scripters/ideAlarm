@@ -12,6 +12,9 @@ The name ideAlarm comes from merging the two words ideal and alarm.
 
 Your home is your castle. Keeping it safe and secure is a top priority of many homeowners. With ideAlarm, you can easily set up your own DIY Home Security System using the sensors that you already have in Domoticz.
 
+#### Reliability
+A dedicated home security system might provide higher reliability than what you achive by a DIY system. It depends how you set things up. With that said, in case don't already own a dedicated home security system but you still want to take advantage of the capabilities of your home automation system together with all its sensors you might want to use it to set up your own DIY home alarm system. Please make sure that you've read and understood the [disclaimer](https://github.com/OH-Jython-Scripters/ideAlarm#disclaimer)
+
 #### Helps you to maintain safety also when unarmed
 ideAlarm has an optional feature that you can use to alert you about doors, windows etc that you have forgotten to close. We call this feature [nagging](https://en.oxforddictionaries.com/definition/nag) 
 
