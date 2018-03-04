@@ -43,7 +43,7 @@ For your convenience you can easily enable or disable a section in the configura
 * [Jython scripting for openHAB 2.x](https://github.com/steve-bate/openhab2-jython)
 * openHAB [expire binding](https://docs.openhab.org/addons/bindings/expire1/readme.html)
 * openHAB [persistence](https://docs.openhab.org/configuration/persistence.html) setup and working
-* utils from mylib
+* [myutils](https://github.com/OH-Jython-Scripters/myutils)
 
 
 #### Download mapping files
