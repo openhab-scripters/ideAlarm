@@ -63,7 +63,7 @@ Group G_Timer
 ```
 
 #### Create Items for each alarm zone you intend to use
-For each alarm zone that you wish to define, create the following items. You are advised to keep the naming convention suggested at least until everything is set up and works well. Your first zone's items get item names starting with 'Z1'. Prepend your second zone items with 'Z2' etc.
+For each alarm zone that you wish to define, create the following items through text .items files located in the $OPENHAB_CONF/items folder. You are advised to keep the naming convention suggested at least until everything is set up and works well. Your first zone's items get item names starting with 'Z1'. Prepend your second zone items with 'Z2' etc.
 
 ```
 Number Z1_Arming_Mode "Z1 Arming Mode: [MAP(en_armingmode.map):%s]" <alarm> (G_AlarmArmingMode)
