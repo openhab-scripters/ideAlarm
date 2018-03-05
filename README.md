@@ -39,6 +39,9 @@ For your convenience you can easily enable or disable a section in the configura
 ## Installation
 
 #### Prerequisits
+
+The following should be installed, configured, tested and running before continuing with installing ideAlarm:
+
 * [openHAB](https://docs.openhab.org/index.html) version **2.2** or later
 * [Jython scripting for openHAB 2.x](https://github.com/steve-bate/openhab2-jython)
 * openHAB [expire binding](https://docs.openhab.org/addons/bindings/expire1/readme.html)
@@ -47,9 +50,7 @@ For your convenience you can easily enable or disable a section in the configura
 
 
 #### Download mapping files
-Download the 2 [mapping files](https://github.com/OH-Jython-Scripters/ideAlarm/tree/master/transform) in the language of your choise and save them on your system where you keep your mappings files (in the transform folder)
-
-Download the [zone status mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_zonestatus.map) and save it on your system where you keep your mappings files.
+Download the [mapping files](https://github.com/OH-Jython-Scripters/ideAlarm/tree/master/transform) in the language of your choise and save them on your system where you keep your mappings files (in the transform folder)
 
 #### Define Item Groups (needed for persistence)
 Below is an example how you can define some groups to help organize your ideAlarm Items. The important thing here is not the names of the groups but rather that you have defined your persistence so that the group **G_Persist** will be persisted on change and on system start up.
@@ -62,7 +63,7 @@ Group G_Timer
 ```
 
 #### Create Items for each alarm zone you intend to use
-For each alarm zone that you wish to define, create the following items. You are advised to keep the naming convention suggested at least until everything is set up and works well. Your first zone's items get item names starting with 'Z1'.
+For each alarm zone that you wish to define, create the following items. You are advised to keep the naming convention suggested at least until everything is set up and works well. Your first zone's items get item names starting with 'Z1'. Prepend your second zone items with 'Z2' etc.
 
 ```
 Number Z1_Arming_Mode "Z1 Arming Mode: [MAP(en_armingmode.map):%s]" <alarm> (G_AlarmArmingMode)
@@ -78,6 +79,12 @@ Switch Z1_Exit_Timer "Z1 exit timer [%s]" <time> (G_Timer) {expire="2m,command=O
 Switch Z1_Nag_Timer "Z1 nag timer [%s]" <time> (G_Timer) {expire="4m,command=OFF"}
 Switch Z1_Alert_Max_Timer "Z1 alert maximum time [%s]" <time> (G_Timer) {expire="20s,command=OFF"}
 ```
+
+#### Create and edit the config file
+* Copy the text from [The example config file](https://raw.githubusercontent.com/OH-Jython-Scripters/ideAlarm/master/automation/lib/2_zones_example_config.py) and paste it into a new file named $OPENHAB_CONF/automation/lib/python/idealarm/config.py
+* Make your changes to the configuration file to suit your system.
+* Copy and paste your configuration file into the form on [PythonBuddy](https://pythonbuddy.com/) to verify that it has the correct Python syntax. The two org.eclipse.smarthome imports will fail but you can ignore that.
+* Save the file.
 
 ## Disclaimer
 THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
