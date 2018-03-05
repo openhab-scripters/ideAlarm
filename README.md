@@ -47,7 +47,7 @@ For your convenience you can easily enable or disable a section in the configura
 
 
 #### Download mapping files
-Download the [arming mode mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_armingmode.map) and save it on your system where you keep your mappings files.
+Download the 2 [mapping files](https://github.com/OH-Jython-Scripters/ideAlarm/tree/master/transform) in the language of your choise and save them on your system where you keep your mappings files (in the transform folder)
 
 Download the [zone status mappings file](https://github.com/OH-Jython-Scripters/ideAlarm/blob/master/transform/en_zonestatus.map) and save it on your system where you keep your mappings files.
 
