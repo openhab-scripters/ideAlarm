@@ -8,6 +8,9 @@ This software should be considered to be in it's early stage of development. It 
 
 In case you decide to install and try this software in it's current state, you should already have some skills when it comes to openHAB, jython scripting and the linux environment. 
 
+## openHAB Jython Scripting on Slack
+OH-Jython-Scripters now has a Slack channel! It will help us to make sense of our work, and drive our efforts in Jython scripting forward. So if you are just curious, got questions, need support or just like to hang around, do not hesitate, join [**openHAB Jython Scripting on Slack**](https://join.slack.com/t/besynnerlig/shared_invite/enQtMzI3NzIyNTAzMjM1LTdmOGRhOTAwMmIwZWQ0MTNiZTU0MTY0MDk3OTVkYmYxYjE4NDE4MjcxMjg1YzAzNTJmZDM3NzJkYWU2ZDkwZmY) <--- Click link!
+
 ## About
 ideAlarm is written in Jython and runs on openHAB 2.
 
