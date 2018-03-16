@@ -350,7 +350,10 @@ class IdeAlarm(object):
         Expects:
          - Nothing really...
         '''
-        self.log = logging.getLogger(LOG_PREFIX+'.IdeAlarm')
+        self.__version__ = '1.0.0'
+        self.__version_info__ = tuple([ int(num) for num in self.__version__.split('.')])
+
+        self.log = logging.getLogger(LOG_PREFIX+'.IdeAlarm V'+self.__version__)
 
         import idealarm.config ######### TEMP 
         #reload(idealarm.config) ######### TEMP
@@ -378,6 +381,12 @@ class IdeAlarm(object):
                 return i
                 self.log.debug(zoneIndex)
         self.log.error('There is no alarm zone named: '+zoneName)
+
+    def __version__(self):
+        return self.__version__
+
+    def logVersion(self):
+        self.log.info('ideAlarm Version is '+self.__version__)
 
     def isArmed(self, zone='1'):
         '''
