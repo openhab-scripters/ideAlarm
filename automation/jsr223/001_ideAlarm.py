@@ -1,5 +1,5 @@
 from openhab.rules import rule, addRule
-from idealarm import ideAlarm #######
+from idealarm import ideAlarm
 from mylib.utils import hasReloadFinished
 
 @rule
