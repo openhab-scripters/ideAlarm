@@ -9,20 +9,20 @@ Use it for inspiration. It won't work "out of the box" in your system.
 
 from org.eclipse.smarthome.core.types import UnDefType
 from org.eclipse.smarthome.core.library.types import OnOffType, OpenClosedType
-from openhab.log import logging, LOG_PREFIX
+from lucid.log import logging, LOG_PREFIX
 from logging import DEBUG, INFO, WARNING, ERROR
 from org.joda.time import DateTime
 from org.joda.time.format import DateTimeFormat
 log = logging.getLogger(LOG_PREFIX + '.ideAlarm.custom')
-from mylib.utils import PRIO, PUSHOVER_PRIO, PUSHOVER_DEF_DEV, kw, sendCommandCheckFirst, greeting
-from openhab.actions import Pushover
-from mylib.speak import tts
-from mylib.sendsms import sms
-from mylib.autoremote import autoremote
+from lucid.utils import PRIO, PUSHOVER_PRIO, PUSHOVER_DEF_DEV, kw, sendCommandCheckFirst, greeting
+from lucid.actions import Pushover
+from lucid.speak import tts
+from lucid.sendsms import sms
+from lucid.autoremote import autoremote
 import random
 
 # Get direct access to the JSR223 scope types and objects (for Jython modules imported into scripts)
-from openhab.jsr223.scope import events, itemRegistry
+from lucid.jsr223.scope import events, itemRegistry
 
 NULL = UnDefType.NULL
 UNDEF = UnDefType.UNDEF

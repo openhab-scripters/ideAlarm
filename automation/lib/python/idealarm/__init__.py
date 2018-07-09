@@ -3,19 +3,19 @@
 import weakref # Using this to prevent problems with garbage collection
 
 # Get direct access to the JSR223 scope types and objects (for Jython modules imported into scripts)
-from openhab.jsr223.scope import events, itemRegistry
+from lucid.jsr223.scope import events, itemRegistry
 from org.eclipse.smarthome.model.persistence.extensions import PersistenceExtensions
 
-from openhab.triggers import ItemCommandTrigger, ItemStateChangeTrigger
+from lucid.triggers import ItemCommandTrigger, ItemStateChangeTrigger
 
 from org.joda.time import DateTime
-from openhab.log import logging, LOG_PREFIX
+from lucid.log import logging, LOG_PREFIX
 from logging import DEBUG, INFO, WARNING, ERROR
 log = logging.getLogger(LOG_PREFIX + '.ideAlarm')
 
-#import mylib.utils ######### TEMP 
-#reload(mylib.utils) ######### TEMP 
-from mylib.utils import getEvent, isActive, getItemValue, postUpdateCheckFirst, sendCommandCheckFirst, kw
+#import lucid.utils ######### TEMP 
+#reload(lucid.utils) ######### TEMP 
+from lucid.utils import getEvent, isActive, getItemValue, postUpdateCheckFirst, sendCommandCheckFirst, kw
 from idealarm import custom
 #reload(custom) ######### TEMP 
 

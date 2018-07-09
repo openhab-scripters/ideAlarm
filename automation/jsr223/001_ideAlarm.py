@@ -1,6 +1,6 @@
-from openhab.rules import rule, addRule
+from lucid.rules import rule, addRule
 from idealarm import ideAlarm
-from mylib.utils import hasReloadFinished
+from lucid.utils import hasReloadFinished
 
 @rule
 class ideAlarmTrigger(object):
