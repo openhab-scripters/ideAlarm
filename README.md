@@ -1,4 +1,4 @@
-# ideAlarm V 1.0.0
+# ideAlarm V 2.0.0
 Multi Zone Home Alarm Script for openHAB jsr223 jython
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
