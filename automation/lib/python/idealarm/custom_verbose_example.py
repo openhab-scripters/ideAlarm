@@ -4,7 +4,8 @@ custom_verbose_example.py
 
 Custom ideAlarm functions library.
 This file demonstrates a few possibilities, things you can implement in your own custom.py
-Use it for inspiration. It won't work "out of the box" in your system.
+Use it for INSPIRATION ONLY. It won't work "out of the box" in your system.
+It contains Items and groups that you do not have in your system.
 '''
 
 from org.eclipse.smarthome.core.types import UnDefType
