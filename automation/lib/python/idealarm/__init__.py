@@ -355,7 +355,7 @@ class IdeAlarm(object):
         Expects:
          - Nothing really...
         '''
-        self.__version__ = '3.0.0'
+        self.__version__ = '3.0.1'
         self.__version_info__ = tuple([ int(num) for num in self.__version__.split('.')])
 
         self.log = logging.getLogger(LOG_PREFIX+'.IdeAlarm V'+self.__version__)
