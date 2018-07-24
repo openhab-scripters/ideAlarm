@@ -42,7 +42,7 @@ def sayHello():
     greetings = [greeting(), 'Hello', 'Greetings', 'Hi']
     peopleAtHome = []
     for member in itemRegistry.getItem('G_Presence_Family').getAllMembers():
-        if member.state.toString() == 'OPEN': peopleAtHome.append(member.label)
+        if member.state == OPEN: peopleAtHome.append(member.label)
     random.shuffle(peopleAtHome)
     msg = random.choice(greetings)
     for i in range(len(peopleAtHome)):
@@ -66,14 +66,14 @@ def onArmingModeChange(zone, newArmingMode, oldArmingMode):
             Pushover.pushover('An Alarm Zone arming mode change for '+zone.name+' triggered, new value is: '+kw(ARMINGMODE, newArmingMode), PUSHOVER_DEF_DEV, PUSHOVER_PRIO['NORMAL'])
 
         if newArmingMode == ARMINGMODE['DISARMED']:
-            sendCommandCheckFirst('Alarm_Status_Indicator_1', 'OFF')
-            sendCommandCheckFirst('Wall_Plug_Bedroom_Fan', 'OFF')
+            sendCommandCheckFirst('Alarm_Status_Indicator_1', OFF)
+            sendCommandCheckFirst('Wall_Plug_Bedroom_Fan', OFF)
             sayHello()
         elif newArmingMode == ARMINGMODE['ARMED_HOME']:
-            sendCommandCheckFirst('Wall_Plug_Bedroom_Fan', 'ON')
+            sendCommandCheckFirst('Wall_Plug_Bedroom_Fan', ON)
 
         if newArmingMode != ARMINGMODE['DISARMED']:
-            sendCommandCheckFirst('Alarm_Status_Indicator_1', 'ON')
+            sendCommandCheckFirst('Alarm_Status_Indicator_1', ON)
 
     log.debug('Custom function: onArmingModeChange: '+zone.name.decode('utf-8')+' ---> '+kw(ARMINGMODE, newArmingMode))
 

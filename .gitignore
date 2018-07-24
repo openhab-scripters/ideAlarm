@@ -1,1 +1,4 @@
 *.pyc
+*.class
+config.py
+custom.py

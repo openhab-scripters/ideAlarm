@@ -11,6 +11,6 @@ class ideAlarmTrigger(object):
 
     def execute(self, modules, inputs):
         if not hasReloadFinished(True): return
-        ideAlarm.execute(modules, inputs)
+        ideAlarm.execute(self, modules, inputs)
 
 addRule(ideAlarmTrigger())
