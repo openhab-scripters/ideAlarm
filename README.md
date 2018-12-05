@@ -3,6 +3,11 @@ Multi Zone Home Alarm Script for openHAB jsr223 jython
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+
+## openHAB compatibility
+IdeAlarm currently works with openHAB 2.3 only. ideAlarm is currently awaiting to be merged into the [Jython scripting for openHAB 2.x](https://github.com/OH-Jython-Scripters/openhab2-jython) repo for compatibility with later versions of openHAB.
+
+
 ## Stage of development
 This software should be considered to be in it's early stage of development. It is working without any known issues in a couple of installations. We are currently looking for people interested to contribute to this project. Please join the OH-Jython-Scripters team if you feel that you can contribute in any way. We need testers, developers, and native english speakers to give the [Wiki](https://github.com/OH-Jython-Scripters/ideAlarm/wiki) an overhaul.
 
