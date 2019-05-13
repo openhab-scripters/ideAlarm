@@ -1,6 +1,10 @@
 # ideAlarm v3.0.1
 Multi Zone Home Alarm Script for openHAB jsr223 jython
 
+# Deprecated project
+
+This project is no longer supported, please consider using [openhab2-jython](https://github.com/OH-Jython-Scripters/openhab2-jython) instead.
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 
